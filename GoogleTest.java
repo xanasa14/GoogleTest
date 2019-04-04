@@ -30,6 +30,8 @@ public class GoogleTest {
 	@Test (groups = "Logo")
 	public void googleLogoTest() {
 		boolean b = driver.findElement(By.xpath("//*[@id=\"hplogo\"]")).isDisplayed();
+		Assert.assertTrue(b);
+		Assert.assertEquals(b,true);
 	}
 	
 	@Test (groups = "Test")
